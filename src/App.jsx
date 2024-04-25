@@ -28,9 +28,11 @@ function App() {
   return (
     <div>
       <h2>Functional Component</h2>
-      <div>
+      <div className="image-div">
         {imageData().map(image => (
-          <img key={image.id} src={image.img} alt={`image:${image.id}`} />
+          <div>
+            <img key={image.id} src={image.img} alt={`image:${image.id}`} />          
+          </div>
         ))}
       </div>
     </div>
